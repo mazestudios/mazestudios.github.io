@@ -2,27 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maze Studios – game development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>Maze Studios — indie game studio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* additional styles for main page — projects & studio grid, keeps same minimal aesthetic */
+        .studio-intro {
+            margin-bottom: 3rem;
+        }
+        
+        .section-heading {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin: 2rem 0 1.2rem 0;
+            border-left: 4px solid #000;
+            padding-left: 1rem;
+        }
+        
+        .project-card {
+            border: 1px solid #eaeaea;
+            border-radius: 28px;
+            padding: 1.8rem;
+            margin: 1.5rem 0 0.5rem 0;
+            transition: all 0.25s ease;
+            background: #ffffff;
+        }
+        
+        .project-card:hover {
+            border-color: #cccccc;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+        
+        .project-card h3 {
+            font-size: 1.8rem;
+            font-weight: 550;
+            margin-bottom: 0.6rem;
+            letter-spacing: -0.01em;
+        }
+        
+        .project-card p {
+            font-size: 1rem;
+            color: #2c2c2c;
+            margin-bottom: 1.6rem;
+            line-height: 1.5;
+        }
+        
+        .btn-outline-dark {
+            background: transparent;
+            border: 2px solid #000;
+            color: #000;
+            padding: 0.7rem 1.8rem;
+            border-radius: 40px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+        
+        .btn-outline-dark:hover {
+            background: #000;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .additional-note {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            color: #5a5a5a;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 1.8rem;
+        }
+        
+        @media (max-width: 600px) {
+            .project-card h3 {
+                font-size: 1.5rem;
+            }
+            .section-heading {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header class="header">
         <div class="logo">
-            <img src="./images/logo.png" alt="Maze Studios" class="logo-img">
+            <a href="index.html" style="display: inline-block; text-decoration: none;">
+                <img src="./images/logo.png" alt="Maze Studios" class="logo-img">
+            </a>
         </div>
     </header>
 
     <main class="main">
-        <div class="content-text">
-            <p>We create mobile games that are fun to play.</p>
-            <p>Our goal is to deliver emotions and engage for hours.</p>
-            <p>Welcome to our maze of ideas!</p>
+        <!-- studio information block -->
+        <div class="studio-intro content-text">
+            <p>Maze Studios is an independent game studio crafting playful, heartfelt mobile games. We believe in joy, surprise, and the beauty of tiny interactions.</p>
+            <p>Our team blends creativity with clean design — each game is a little maze of ideas waiting to be explored. Based in Europe, we create for players around the world.</p>
+            <p>We're currently focused on charming clickers, collect-a-thons, and experiences that make you smile. Welcome to our maze — we're glad you're here.</p>
         </div>
 
-        <div class="buttons">
-            <a href="https://www.termsfeed.com/live/7bbc9dbe-ace3-4d96-b46e-c874cf1ff2f5" class="btn btn-primary">Terms Of Service</a>
-            <a href="https://mazestudios.site/privacy" class="btn btn-secondary">Privacy Policy</a>
+        <!-- projects showcase section -->
+        <div class="projects-section">
+            <h2 class="section-heading">✦ our projects</h2>
+            <div class="project-card">
+                <h3>Labubu Clicker</h3>
+                <p>A whimsical tapping adventure where you collect Views & Likes, unlock surprises, and relax with adorable Labubu characters. Simple, satisfying, and endlessly fun.</p>
+                <a href="https://mazestudios.site/labubuclicker" class="btn-outline-dark">⚡ discover Labubu Clicker →</a>
+            </div>
+            <!-- future projects placeholder (optional, shows growth) -->
+            <div class="additional-note">
+                More mysterious projects are wandering through the maze — stay tuned!
+            </div>
         </div>
     </main>
 
